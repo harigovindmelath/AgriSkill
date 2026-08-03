@@ -19,10 +19,10 @@ from django.conf.global_settings import LOGIN_URL
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%j@d!ugb5=(cfip^m#yl9+xjpt!@p+-r_ur)9$04wa76*^*30v'
+os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 # Set your allowed hosts
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
