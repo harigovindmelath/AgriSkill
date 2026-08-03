@@ -67,6 +67,4 @@ requirements.txt
 Minor-final.pdf      # Full academic project report
 ```
 
-## Project Report
 
-See [`Minor-final.pdf`](./Minor-final.pdf) for the complete written project report, including problem statement, design decisions, and evaluation.
